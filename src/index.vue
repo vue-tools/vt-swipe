@@ -34,6 +34,7 @@
                         this.pointNum.splice(0, 1, index === 0 || index === 2)
                     } else {
                         this.pointNum.splice(index - 1, 1, false)
+                        this.pointNum.splice(items.length === index + 1 ? 0 : index + 1, 1, false)
                         this.pointNum.splice(index, 1, true)
                     }
                 }
